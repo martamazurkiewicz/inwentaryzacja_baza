@@ -1,3 +1,4 @@
+ALTER DATABASE `mmaz` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE mmaz;
 
 CREATE TABLE asset_types(
@@ -61,3 +62,5 @@ INSERT INTO assets (name,asset_type_id,room_id) VALUES ('kr112',2,1),
 ('m520',3,1),('p360',4,1),('kr2',2,3),('s1001',5,2),('t345',6,3);
 
 INSERT INTO reports (name,room_id,create_date) VALUES ('raport3/77',1,NOW()),('nieaktualny',2,NOW());
+
+INSERT INTO reports_assets VALUES (1,1),(1,2),(1,3),(2,5);
