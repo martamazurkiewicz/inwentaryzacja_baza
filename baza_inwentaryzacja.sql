@@ -50,7 +50,7 @@ salt VARCHAR(30) NOT NULL,
 hash varchar(64) NOT NULL,
 PRIMARY KEY(id));
 
-INSERT INTO asset_types (letter,name) VALUES ('k','komputer'), 
+INSERT INTO asset_types (letter,name) VALUES ('c','komputer'), 
 ('k','krzesło'),('m','monitor'),('p','projektor'),('s','stół'),('t','tablica');
 
 INSERT INTO buildings (name) VALUES ('b 34'),('rektorat');
