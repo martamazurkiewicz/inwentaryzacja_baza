@@ -2,7 +2,7 @@ USE mmaz;
 
 CREATE TABLE asset_types(
 id TINYINT NOT NULL AUTO_INCREMENT,
-letter CHAR(1) NOT NULL,
+letter CHAR(1) NOT NULL UNIQUE,
 name VARCHAR(20) NOT NULL UNIQUE,
 PRIMARY KEY(id));
 
@@ -58,6 +58,6 @@ INSERT INTO buildings (name) VALUES ('b 34'),('rektorat');
 INSERT INTO rooms (name,building_id) VALUES ('3/77',1), ('3/8',1), ('1/23',2);
 
 INSERT INTO assets (name,asset_type_id,room_id) VALUES ('kr112',2,1), 
-('m520',3,1),('p360',4,1),('kr2',2,3),,('s1001',5,2),('t345',6,3);
+('m520',3,1),('p360',4,1),('kr2',2,3),('s1001',5,2),('t345',6,3);
 
 INSERT INTO reports (name,room_id,create_date) VALUES ('raport3/77',1,NOW()),('nieaktualny',2,NOW());
